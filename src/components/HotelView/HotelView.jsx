@@ -1,7 +1,7 @@
-import "./hotelview.scss"
+import "./hotel-view.scss"
 
 const HotelView = () => {
-  return <div>Hotel View</div>
+  return <div className="hotel-view">Hotel View</div>
 }
 
 export default HotelView
