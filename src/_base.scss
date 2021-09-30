@@ -26,3 +26,36 @@ a {
   text-decoration: none;
   color: inherit;
 }
+.btn-inline {
+  display: inline-block;
+  border: none;
+  color: $primary;
+  background-color: transparent;
+  font-size: inherit;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  cursor: pointer;
+  transition: all 0.2s;
+  &:hover {
+    color: $grey-dark-1;
+    animation: plusate 1s infinite;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+@keyframes plusate {
+  0% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+}
