@@ -1,7 +1,7 @@
 @import "../../variables";
 
 .header {
-  height: 7rem;
+  height: $header-height;
   background-color: #fff;
   border-bottom: $grey-light-2;
   display: flex;
