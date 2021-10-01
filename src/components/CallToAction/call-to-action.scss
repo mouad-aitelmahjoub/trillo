@@ -1,0 +1,48 @@
+@import "../../variables";
+
+.cta {
+  padding: 3.5rem 0;
+  text-align: center;
+
+  &__book-now {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
+  }
+  .btn {
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10rem;
+    background-image: linear-gradient(to right, $primary-light, $primary-dark);
+    color: white;
+    overflow: hidden;
+    cursor: pointer;
+    & > * {
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      transition: all 0.5s;
+    }
+
+    &__visible {
+      padding: 2rem 7.5rem;
+      bottom: 0;
+    }
+    &__hidden {
+      position: absolute;
+      padding: 2rem;
+      left: 0;
+      top: -100%;
+    }
+    &:hover .btn__visible {
+      transform: translateY(100%);
+    }
+    &:hover .btn__hidden {
+      top: 0;
+    }
+  }
+}

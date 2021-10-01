@@ -1,3 +1,4 @@
+import CallToAction from "../CallToAction/CallToAction"
 import Gallery from "../Gallery/Gallery"
 import HotelDetails from "../HotelDetails/HotelDetails"
 import HotelInfo from "../HotelInfo/HotelInfo"
@@ -9,6 +10,7 @@ const HotelView = () => {
       <Gallery />
       <HotelDetails />
       <HotelInfo />
+      <CallToAction />
     </div>
   )
 }
