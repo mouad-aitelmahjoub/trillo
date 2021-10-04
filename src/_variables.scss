@@ -22,3 +22,9 @@ $border-line: 1px solid $grey-light-2;
 
 //Box Shadow
 $shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+
+//BreakPoints
+$bp-largest: 75em; // 1200px/16 = 75em
+$bp-large: 68.75em; // 1100px/16 = 68.75em
+$bp-medium: 56.25em; // 900px/16 = 56.25em
+$bp-small: 37.5em; // 600px/16 = 37.5em

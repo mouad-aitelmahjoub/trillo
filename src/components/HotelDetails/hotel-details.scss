@@ -9,6 +9,10 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: 1.5rem 3rem;
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1.5rem;
+      padding: 1.5rem 1.5rem;
+    }
   }
   &__stars {
     margin-right: auto;
@@ -38,6 +42,11 @@
     color: $white;
     padding: 0 2.25rem;
     margin-left: 3rem;
+
+    @media only screen and (max-width: $bp-small) {
+      padding: 0 1.25rem;
+      font-size: 1.25rem;
+    }
   }
   &__rating-average {
     font-size: 2.25rem;
@@ -46,5 +55,8 @@
   &__rating-count {
     font-size: 1rem;
     text-transform: uppercase;
+    @media only screen and (max-width: $bp-small) {
+      display: none;
+    }
   }
 }
